@@ -1,6 +1,7 @@
 import 'package:bookly/features/splash/presentaion/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+// ignore: depend_on_referenced_packages
 import 'package:device_preview/device_preview.dart';
 
 void main() {

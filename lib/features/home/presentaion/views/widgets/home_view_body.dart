@@ -6,11 +6,11 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        SizedBox(height: 50),
-        CustomAppbar(),
+        SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+        const CustomAppbar(),
       ],
     );
   }

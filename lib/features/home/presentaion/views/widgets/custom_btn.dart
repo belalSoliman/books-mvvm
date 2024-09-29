@@ -1,4 +1,3 @@
-import 'package:bookly/consts.dart';
 import 'package:flutter/material.dart';
 
 class CustomBtn extends StatelessWidget {
@@ -21,7 +20,7 @@ class CustomBtn extends StatelessWidget {
           )),
       onPressed: () {},
       child: Text(
-        "Grab Now",
+        buttonTetxt,
         style: TextStyle(
           color: textColor,
         ),

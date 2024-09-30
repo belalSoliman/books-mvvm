@@ -1,7 +1,8 @@
 import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/home/presentaion/views/widgets/book_of_week_widget.dart';
 import 'package:bookly/features/home/presentaion/views/widgets/custom_appbar.dart';
-import 'package:bookly/features/home/presentaion/views/widgets/list_view_display.dart';
+import 'package:bookly/features/home/presentaion/views/widgets/list_view_books.dart';
+import 'package:bookly/features/home/presentaion/views/widgets/popular_book_item.dart';
 
 import 'package:flutter/material.dart';
 
@@ -27,6 +28,7 @@ class HomeViewBody extends StatelessWidget {
               "Popular Books",
               style: Styles.titleMedduim,
             ),
+            PopularBookItem(),
             // Flexible(child: ListViewPopualrBOoks()),
           ],
         ),

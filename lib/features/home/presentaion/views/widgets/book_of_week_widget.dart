@@ -12,7 +12,7 @@ class BookOfWeekWidget extends StatelessWidget {
       semanticContainer: true,
       shadowColor: Colors.black,
       color: const Color(0XFFFFFFFF),
-      margin: const EdgeInsets.symmetric(horizontal: 24),
+      margin: const EdgeInsets.symmetric(horizontal: 12),
       elevation: 5,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),

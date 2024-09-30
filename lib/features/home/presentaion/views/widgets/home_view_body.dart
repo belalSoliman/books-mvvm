@@ -1,3 +1,4 @@
+import 'package:bookly/core/utils/styles.dart';
 import 'package:bookly/features/home/presentaion/views/widgets/book_of_week_widget.dart';
 import 'package:bookly/features/home/presentaion/views/widgets/custom_appbar.dart';
 import 'package:bookly/features/home/presentaion/views/widgets/list_view_display.dart';
@@ -9,15 +10,27 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        SizedBox(height: MediaQuery.of(context).size.height * 0.05),
-        const CustomAppbar(),
-        SizedBox(height: MediaQuery.of(context).size.height * 0.03),
-        const BookOfWeekWidget(),
-        const ListViewDisplay(),
-      ],
+    return SingleChildScrollView(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 14),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(height: MediaQuery.of(context).size.height * 0.05),
+            const CustomAppbar(),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.03),
+            const BookOfWeekWidget(),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.03),
+            const ListViewDisplay(),
+            SizedBox(height: MediaQuery.of(context).size.height * 0.03),
+            const Text(
+              "Popular Books",
+              style: Styles.titleMedduim,
+            ),
+            // Flexible(child: ListViewPopualrBOoks()),
+          ],
+        ),
+      ),
     );
   }
 }

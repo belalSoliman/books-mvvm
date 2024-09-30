@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 // ignore: depend_on_referenced_packages
 import 'package:device_preview/device_preview.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(
@@ -21,8 +22,9 @@ class Books extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData().copyWith(
-          // scaffoldBackgroundColor: const Color(0xff100b20),
-          ),
+        // scaffoldBackgroundColor: const Color(0xff100b20),
+        textTheme: GoogleFonts.hankenGroteskTextTheme(),
+      ),
       home: const SplashView(),
     );
   }

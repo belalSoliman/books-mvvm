@@ -17,7 +17,7 @@ class HomeView extends StatelessWidget {
               child: SvgPicture.asset(
                 AssetsData.bookBG,
               )),
-          const HomeViewBody()
+          const HomeViewBody(),
         ],
       ),
     );

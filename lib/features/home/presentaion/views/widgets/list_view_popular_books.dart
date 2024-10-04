@@ -6,14 +6,13 @@ class ListViewPopualrBOoks extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: MediaQuery.of(context).size.height * .3,
-      child: ListView.builder(
-        itemCount: 4,
-        itemBuilder: (BuildContext context, int index) {
-          return PopularBookItem();
-        },
-      ),
+    return ListView.builder(
+      physics: const NeverScrollableScrollPhysics(),
+      padding: EdgeInsets.zero,
+      itemCount: 10,
+      itemBuilder: (BuildContext context, int index) {
+        return const PopularBookItem();
+      },
     );
   }
 }

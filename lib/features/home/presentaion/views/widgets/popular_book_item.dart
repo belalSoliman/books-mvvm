@@ -84,7 +84,7 @@ class PopularBookItem extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 8),
-                  Text(
+                  const Text(
                     "\$45.87",
                     style: TextStyle(
                       fontSize: 16,
@@ -95,7 +95,7 @@ class PopularBookItem extends StatelessWidget {
                 ],
               ),
             ),
-            Column(
+            const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const SizedBox(height: 12),

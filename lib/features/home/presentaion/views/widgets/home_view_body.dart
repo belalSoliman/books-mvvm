@@ -3,7 +3,6 @@ import 'package:bookly/features/home/presentaion/views/widgets/book_of_week_widg
 import 'package:bookly/features/home/presentaion/views/widgets/custom_appbar.dart';
 import 'package:bookly/features/home/presentaion/views/widgets/list_view_books.dart';
 import 'package:bookly/features/home/presentaion/views/widgets/list_view_popular_books.dart';
-import 'package:bookly/features/home/presentaion/views/widgets/popular_book_item.dart';
 
 import 'package:flutter/material.dart';
 

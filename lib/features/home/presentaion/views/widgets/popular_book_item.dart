@@ -98,13 +98,13 @@ class PopularBookItem extends StatelessWidget {
             const Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const SizedBox(height: 12),
-                const CustomBtn(
+                SizedBox(height: 12),
+                CustomBtn(
                   buttonTetxt: "Grab Now",
                   textColor: Colors.white,
                   buttonColor: btnColor,
                 ),
-                const SizedBox(height: 12),
+                SizedBox(height: 12),
                 CustomBtn(
                   buttonTetxt: "Learn More",
                   textColor: fontColor,

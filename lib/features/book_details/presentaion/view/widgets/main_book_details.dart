@@ -16,7 +16,7 @@ class BookOfWeekWidgetDetails extends StatelessWidget {
       ),
       child: SizedBox(
         width: MediaQuery.of(context).size.width * 0.9,
-        height: MediaQuery.of(context).size.width * 0.47,
+        height: MediaQuery.of(context).size.width * 0.44,
         child: Row(
           children: [
             Container(
@@ -59,7 +59,16 @@ class BookOfWeekWidgetDetails extends StatelessWidget {
                   SizedBox(
                     height: MediaQuery.of(context).size.height * 0.01,
                   ),
-                  const Row(children: []),
+                  const Row(children: [
+                    Icon(
+                      Icons.star,
+                      color: Colors.amber,
+                    ),
+                    Text(
+                      ' 4.8',
+                      style: TextStyle(color: Colors.white),
+                    )
+                  ]),
                 ],
               ),
             )

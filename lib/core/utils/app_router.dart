@@ -1,5 +1,6 @@
 import 'package:bookly/features/book_details/presentaion/view/book_details_view.dart';
 import 'package:bookly/features/home/presentaion/views/home_view.dart';
+import 'package:bookly/features/search/presentaion/views/search_screen.dart';
 import 'package:bookly/features/splash/presentaion/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -10,7 +11,7 @@ abstract class AppRouter {
       GoRoute(
         path: '/',
         builder: (BuildContext context, GoRouterState state) {
-          return const BookDetailsView();
+          return const SplashView();
         },
         routes: <RouteBase>[
           GoRoute(
@@ -22,7 +23,13 @@ abstract class AppRouter {
           GoRoute(
             path: '/detailsView',
             builder: (BuildContext context, GoRouterState state) {
-              return const SplashView();
+              return const BookDetailsView();
+            },
+          ),
+          GoRoute(
+            path: '/SearchView',
+            builder: (BuildContext context, GoRouterState state) {
+              return const SearchScreen();
             },
           ),
         ],

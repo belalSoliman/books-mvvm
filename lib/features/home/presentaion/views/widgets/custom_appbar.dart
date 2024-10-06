@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class CustomAppbar extends StatelessWidget {
   const CustomAppbar({super.key});
@@ -12,7 +13,11 @@ class CustomAppbar extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.search_rounded)),
+          IconButton(
+              onPressed: () {
+                GoRouter.of(context).push('/searchView');
+              },
+              icon: const Icon(Icons.search_rounded)),
           const Expanded(
             child: Text(
               'Book of the week',

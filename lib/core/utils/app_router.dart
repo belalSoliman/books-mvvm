@@ -10,7 +10,7 @@ abstract class AppRouter {
       GoRoute(
         path: '/',
         builder: (BuildContext context, GoRouterState state) {
-          return const SplashView();
+          return const BookDetailsView();
         },
         routes: <RouteBase>[
           GoRoute(
@@ -22,7 +22,7 @@ abstract class AppRouter {
           GoRoute(
             path: '/detailsView',
             builder: (BuildContext context, GoRouterState state) {
-              return const BookDetailsView();
+              return const SplashView();
             },
           ),
         ],

@@ -6,14 +6,21 @@ class CustomAppBarDetials extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 30),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.close)),
           IconButton(
-              onPressed: () {}, icon: const Icon(Icons.shopping_cart_outlined))
+              onPressed: () {},
+              icon: const Icon(
+                Icons.close,
+                color: Colors.white,
+              )),
+          IconButton(
+              onPressed: () {},
+              icon:
+                  const Icon(Icons.shopping_cart_outlined, color: Colors.white))
         ],
       ),
     );

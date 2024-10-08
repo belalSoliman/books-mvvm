@@ -11,7 +11,7 @@ class SearchScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
       ),
-      body: SafeArea(
+      body: const SafeArea(
         child: SearchBody(),
       ),
     );

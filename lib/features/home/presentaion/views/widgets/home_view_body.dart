@@ -31,13 +31,12 @@ class HomeViewBody extends StatelessWidget {
                 style: Styles.titleMedduim,
               ),
 
+              ListViewPopualrBOoks(),
+
               // Flexible(child: ListViewPopualrBOoks()),
             ],
           ),
         )),
-        const SliverFillRemaining(
-          child: ListViewPopualrBOoks(),
-        )
       ],
     );
   }

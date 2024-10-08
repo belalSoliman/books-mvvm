@@ -7,11 +7,15 @@ class SearchBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        SearchScreenIcon(),
-        Expanded(child: ListViewPopualrBOoks()),
-      ],
-    );
+    return const CustomScrollView(slivers: [
+      SliverToBoxAdapter(
+        child: Column(
+          children: const [
+            SearchScreenIcon(),
+            ListViewPopualrBOoks(),
+          ],
+        ),
+      )
+    ]);
   }
 }

@@ -1,13 +1,20 @@
 import 'dart:ffi';
 
 class BookEntity {
-  final String image;
+  final String bookid;
+  final String? image;
   final String title;
-  final String author;
-  final Double price;
+  final String? author;
+  final num? price;
   final String description;
-  final num rating;
+  final num? rating;
 
-  BookEntity(this.image, this.title, this.author, this.price, this.description,
-      this.rating);
+  BookEntity(
+      {required this.image,
+      required this.title,
+      required this.author,
+      required this.price,
+      required this.description,
+      required this.bookid,
+      required this.rating});
 }

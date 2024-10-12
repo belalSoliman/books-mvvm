@@ -31,7 +31,7 @@ class HomeViewBody extends StatelessWidget {
                 style: Styles.titleMedduim,
               ),
 
-              ListViewPopualrBOoks(),
+              const ListViewPopualrBOoks(),
 
               // Flexible(child: ListViewPopualrBOoks()),
             ],

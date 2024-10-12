@@ -10,7 +10,7 @@ class SearchBody extends StatelessWidget {
     return const CustomScrollView(slivers: [
       SliverToBoxAdapter(
         child: Column(
-          children: const [
+          children: [
             SearchScreenIcon(),
             ListViewPopualrBOoks(),
           ],

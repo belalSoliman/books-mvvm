@@ -24,8 +24,12 @@ class HomeViewBody extends StatelessWidget {
               SizedBox(height: MediaQuery.of(context).size.height * 0.02),
               const BookOfWeekWidget(),
               SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+              const Text(
+                "Recommanded for you",
+                style: Styles.titleMedduim,
+              ),
               const ListViewDisplay(),
-              SizedBox(height: MediaQuery.of(context).size.height * 0.02),
+              SizedBox(height: MediaQuery.of(context).size.height * 0.01),
               const Text(
                 "Popular Books",
                 style: Styles.titleMedduim,

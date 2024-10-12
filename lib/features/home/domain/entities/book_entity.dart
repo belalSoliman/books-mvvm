@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 class BookEntity {
   final String bookid;
   final String? image;

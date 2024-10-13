@@ -1,11 +1,19 @@
+import 'package:bookly/consts.dart';
 import 'package:bookly/core/utils/app_router.dart';
+import 'package:bookly/features/home/domain/entities/book_entity.dart';
 import 'package:flutter/material.dart';
 
 // ignore: depend_on_referenced_packages
 import 'package:device_preview/device_preview.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:hive/hive.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+  Hive.registerAdapter(BookEntityAdapter());
+  await Hive.openBox<BookEntity>(KfeaturesBooks);
+  await Hive.openBox<BookEntity>(KnewestBooks);
   runApp(
     DevicePreview(
       enabled: true,

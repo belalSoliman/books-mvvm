@@ -6,14 +6,14 @@ import 'package:flutter/material.dart';
 // ignore: depend_on_referenced_packages
 import 'package:device_preview/device_preview.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hive/hive.dart';
+
 import 'package:hive_flutter/hive_flutter.dart';
 
 void main() async {
   await Hive.initFlutter();
   Hive.registerAdapter(BookEntityAdapter());
-  await Hive.openBox<BookEntity>(KfeaturesBooks);
-  await Hive.openBox<BookEntity>(KnewestBooks);
+  await Hive.openBox<BookEntity>(kfeaturesBooks);
+  await Hive.openBox<BookEntity>(knewestBooks);
   runApp(
     DevicePreview(
       enabled: true,

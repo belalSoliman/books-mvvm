@@ -13,13 +13,16 @@ class HemoRepoImplementaion extends HomeRepo {
   HemoRepoImplementaion(
       {required this.homeRemoteDataSource, required this.homeLocalDataSource});
   @override
-  Future<Either<Failure, List<BookEntity>>> fetchFeaturedBooks() async {
+  Future<Either<Failure, List<BookEntity>>> fetchFeaturedBooks(
+      {int count = 0}) async {
     try {
       var booksList = homeLocalDataSource.fetchFeaturedBooks();
       if (booksList.isNotEmpty) {
         return right(booksList);
       }
-      var books = await homeRemoteDataSource.fetchFeaturedBooks();
+      var books = await homeRemoteDataSource.fetchFeaturedBooks(
+        count: count,
+      );
       return right(books);
     } catch (e) {
       if (e is DioException) {

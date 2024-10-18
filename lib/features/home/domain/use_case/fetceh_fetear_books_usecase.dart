@@ -9,8 +9,10 @@ class FetcehFetearBooksUsecase extends UseCase<List<BookEntity>> {
   FetcehFetearBooksUsecase({required this.homeRepo});
 
   @override
-  Future<Either<Failure, List<BookEntity>>> call() async {
-    return await homeRepo.fetchFeaturedBooks();
+  Future<Either<Failure, List<BookEntity>>> call([int count = 0]) async {
+    return await homeRepo.fetchFeaturedBooks(
+      count: count,
+    );
   }
 }
 

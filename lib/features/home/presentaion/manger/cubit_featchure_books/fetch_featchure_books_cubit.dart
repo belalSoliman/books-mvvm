@@ -10,7 +10,7 @@ class FetchFeatchureBooksCubit extends Cubit<FetchFeatchureBooksState> {
   FetchFeatchureBooksCubit(this.fetchFeatchureBooksUsecase)
       : super(FetchFeatchureBooksInitial());
   final FetcehFetearBooksUsecase fetchFeatchureBooksUsecase;
-  Future<void> fetchFetureBooks() async {
+  Future<void> fetchFetureBooks({int count = 0}) async {
     emit(FetchFeatchureBooksLoading());
     var result = await fetchFeatchureBooksUsecase.call();
     result.fold((failure) {

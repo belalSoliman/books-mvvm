@@ -41,10 +41,12 @@ class Books extends StatelessWidget {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
-            create: (context) => FetchFeatchureBooksCubit(
-                  FetcehFetearBooksUsecase(
-                      homeRepo: getIt.get<HemoRepoImplementaion>()),
-                )),
+          create: (context) => FetchFeatchureBooksCubit(
+            FetcehFetearBooksUsecase(
+              homeRepo: getIt.get<HemoRepoImplementaion>(),
+            ),
+          )..fetchFetureBooks(), // Initial fetch on app start
+        ),
         BlocProvider(
             create: (context) => NewestBooksCubit(
                   FetchPopBooksUseCae(
